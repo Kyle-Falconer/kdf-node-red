@@ -4,12 +4,14 @@ Customized Node Red installation to assist with Home Assistant, when using Inove
 Based on:
 * https://nodered.org/docs/getting-started/docker
 * https://github.com/node-red/node-red-docker/blob/master/docker-custom/
+* https://github.com/hassio-addons/addon-node-red/tree/master/node-red
 * https://flows.nodered.org/node/node-contrib-inovelli-status-manager
 
 ## testing locally
 ```
 mkdir ./data
 docker build -t kdf-node-red:latest .
+docker rm mynodered
 docker run -it -p 1880:1880 --name mynodered -v `pwd`/data:/data  kdf-node-red:latest
 ```
 
