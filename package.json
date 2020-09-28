@@ -1,0 +1,22 @@
+{
+  "name": "node-red",
+  "version": "1.0.0",
+  "description": "customized Node Red installation to help with Home Assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyle-Falconer/node-red.git"
+  },
+  "author": "Kyle Falconer",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Kyle-Falconer/node-red/issues"
+  },
+  "homepage": "https://github.com/Kyle-Falconer/node-red#readme",
+  "dependencies": {
+    "node-red-contrib-inovelli-nodes" : "0.0.5"
+  }
+}
