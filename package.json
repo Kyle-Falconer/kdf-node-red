@@ -1,22 +1,25 @@
 {
-  "name": "node-red",
+  "name": "kdf-node-red",
   "version": "1.0.0",
   "description": "customized Node Red installation to help with Home Assistant",
-  "main": "index.js",
+  "main": "node_modules/node-red/red/red.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+    "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+    "debug_brk": "node --inspect=0.0.0.0:9229 --inspect-brk $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kyle-Falconer/node-red.git"
   },
   "author": "Kyle Falconer",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Kyle-Falconer/node-red/issues"
   },
   "homepage": "https://github.com/Kyle-Falconer/node-red#readme",
   "dependencies": {
+    "node-red" : "1.1.3",
     "node-red-contrib-inovelli-nodes" : "0.0.5"
   }
 }
